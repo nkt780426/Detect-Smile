@@ -1,0 +1,12 @@
+tensorflow[and-cuda]
+matplotlib
+tensorflow_datasets
+ipywidgets
+tensorrt
+scikit-learn
+seaborn
+opencv-python
+imbalanced-learn
+tensorboard_plugin_profile
+albumentations
+imutils
