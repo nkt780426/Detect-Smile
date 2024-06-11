@@ -1,4 +1,2 @@
-model/dataset/
 model/merged_dataset/
-model/best_model.keras
 model/last_model.keras
