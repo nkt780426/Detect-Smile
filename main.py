@@ -3,7 +3,7 @@ import cv2
 import imutils
 import numpy as np
 from tensorflow.keras.models import load_model
-from tensorflow.keras.applications.resnet50 import preprocess_input
+from tensorflow.keras.applications.resnet50
 
 app = Flask(__name__)
 

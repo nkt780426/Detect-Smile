@@ -5,17 +5,8 @@ Nhược điểm:
 
 ------------------------------------------------------------------------------
 
-Bước 1: Thiết lập
-- Tải extension Tensorboard trên VSCode: không hiểu thì xem tại https://stackoverflow.com/questions/63938552/how-to-run-tensorboard-in-vscode
-- Tải dataset vào thư mục gốc của project và đặt tên chính xác là "dataset"
-- Cài đặt các package trong requirements.txt: pip install -r requirements.txt
-=> Bản thân tôi phải cài Ubuntu dual boot với Windows nên có thể Tensorboard sẽ không nhìn thấy hoặc cấu hình khác, tra ChatGPT để biết thông tin chi tiết
-Dùng Ubuntu nhanh hơn WSL2 nhiều, tôi train 20 phút được 11 epoch, trong khi WSL2 thì lâu lắm
-
-Bước 2: Vấn đề tồn đọng
-- Ở bước cuối evaluate: Phải vẽ được ROC bằng Pylot để xác định threshold cho phù hợp (không hiểu đoạn này hỏi lại tôi)
-- Chưa code lại file OpenCV để đếm số khuôn mặt cười
-
-pip install flask
-
-https://learn.microsoft.com/en-us/windows/wsl/connect-usb
+- Frame => haar_casscade => x,y,z,t => Ma trận 2 chiều hoặc 3 chiều
+- Input: (None, 64, 64, 3) => None là batch_sise
+    roi_bgr = np.expand_dims(roi_bgr, axis=0)  # Thêm chiều batch
+- Ảnh phải về màu xám
+- Chuẩn hóa chia 255
