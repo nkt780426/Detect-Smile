@@ -10,3 +10,11 @@ Nhược điểm:
     roi_bgr = np.expand_dims(roi_bgr, axis=0)  # Thêm chiều batch
 - Ảnh phải về màu xám
 - Chuẩn hóa chia 255
+
+-------------------------------------------------------------------------------
+sudo apt-get update
+sudo apt-get install qtbase5-dev
+sudo apt-get install -y libgtk2.0-dev pkg-config
+sudo apt-get install -y libcanberra-gtk-module
+pip uninstall opencv-python opencv-python-headless
+pip install opencv-python
